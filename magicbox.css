@@ -1,0 +1,59 @@
+* {
+  font-family: sans-serif;
+  /*border: 1px solid #000;*/
+}
+
+/* Box */
+.magic-box {
+  position: relative;
+  background: lightgray;
+  width: 500px;
+  height: 500px;
+  padding: 20px 40px;
+}
+.magic-box .rounded {
+  border-radius: 15px;
+}
+
+/* Text */
+.magic-box .magic-header {
+  position: absolute;
+  transition: margin-top 0.5s, margin-bottom 0.5s;
+  transition-timing-function: cubic-bezier(.4,-0.5,0,1.75);
+}
+.magic-box:hover .magic-header {
+  margin-top: 12px;
+}
+.magic-box .magic-info {
+  transition: margin-top 0.5s, margin-bottom 0.5s;
+  transition-timing-function: cubic-bezier(.4,-0.5,0,1.75);
+}
+.magic-box:hover .magic-info {
+  margin-bottom: 8px;
+}
+
+/* Positioning */
+.magic-bottom {
+  position: absolute;
+	bottom: 0;
+  padding-bottom: inherit;
+}
+.magic-box .magic-right {
+  text-align: right;
+  float: right;
+  right: 0;
+  padding-right: inherit;
+}
+.magic-box .magic-left {
+  text-align: left;
+  float: left;
+}
+.magic-half {
+  width: 50%;
+}
+
+/* Test box, testing differences */
+.test-box {
+  width: 500px;
+  height: 300px;
+}
