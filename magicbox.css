@@ -1,22 +1,12 @@
-* {
-  font-family: sans-serif;
-  /*border: 1px solid #000;*/
-}
-
 /* Box */
 .magic-box {
   position: relative;
   background: lightgray;
-  width: 500px;
-  height: 500px;
+  height: 400px;
   overflow: hidden;
 }
 .magic-content {
   padding: 20px 40px;
-}
-.magic-box a {
-  color: white;
-  text-decoration: none;
 }
 
 /* Images */
@@ -40,13 +30,13 @@
 
 /* Text */
 .magic-box .magic-header {
-  top: 15px;
+  top: 20px;
   position: absolute;
   transition: margin-top 0.5s, margin-bottom 0.5s;
   transition-timing-function: cubic-bezier(.4,-0.5,0,1.75);
 }
 .magic-box:hover .magic-header {
-  margin-top: 12px;
+  margin-top: -1%;
 }
 .magic-box .magic-info {
   transition: margin-top 0.5s, margin-bottom 0.5s;
@@ -88,25 +78,4 @@
   cursor: pointer;
   width: 100%;
   height: 100%;
-}
-
-
-/* Test box, testing differences */
-.test-box-1 {
-  color: white;
-  width: 50%;
-  height: 300px;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-  /* Positioning */
-  left: 50%;
-  transform: translateX(-50%);
-}
-.test-box-2 {
-  width: 40%;
-  height: 300px;
-  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
-  background-color: darkorange;
-  /* Positioning */
-  left: 50%;
-  transform: translateX(-50%);
 }
