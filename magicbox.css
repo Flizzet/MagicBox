@@ -9,6 +9,7 @@
   background: lightgray;
   width: 500px;
   height: 500px;
+  overflow: hidden;
 }
 .magic-content {
   padding: 20px 40px;
@@ -27,12 +28,13 @@
   transition: 0.5s;
   transition-timing-function: cubic-bezier(.4,-0.5,0,1.75);
   background-position: center;
-  background-size: 110%;
-  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scale(1.05);
 }
 .magic-box:hover .magic-background-image {
-  background-size: 120%;
+  transform: scale(1.15);
 }
+
 /* Text */
 .magic-box .magic-header {
   top: 15px;
@@ -70,6 +72,25 @@
 .magic-half {
   width: 50%;
 }
+
+/* Link */
+.magic-box a {
+    display: none;
+    font-size: 35px;
+    color: #ffffff !important;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    cursor: pointer;
+    /*text-decoration: none;*/
+}
+
 
 /* Test box, testing differences */
 .test-box-1 {
